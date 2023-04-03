@@ -6,6 +6,3 @@ MarkupSafe==2.0.1
 numpy>=1.17.3
 coverage
 pydantic
-kafka-python
-pandas
-scikit-surprise
