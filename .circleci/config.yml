@@ -16,6 +16,7 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - run: pip install kafka-python
       - run: python -m unittest Pipeline.Tests.test_data_collection
 
 workflows:
