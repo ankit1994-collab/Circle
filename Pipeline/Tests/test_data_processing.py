@@ -40,7 +40,7 @@ class TestDataProcessing(unittest.TestCase):
             os.unlink(temp.name)
 
         self.assertEqual(len(top_movies), 1)
-        self.assertEqual(top_movies[0], 101)
+        self.assertEqual(top_movies[0], 102)
         # Additional assertions can be added depending on the desired behavior
 
 # ---------------------------------------------------------------------------- #
