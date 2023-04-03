@@ -17,6 +17,7 @@ jobs:
     steps:
       - checkout
       - run: sudo pip install --upgrade pip
+      - run: pip install -r requirements.txt
       - run: pip install kafka-python
       - run: pip install pandas
       - run: python -m unittest Pipeline.Tests.test_data_collection
