@@ -19,6 +19,17 @@ jobs:
       - run: sudo pip install --upgrade pip
       - run: pip install kafka-python
       - run: python -m unittest Pipeline.Tests.test_data_collection
+      - run: python -m unittest Pipeline.Tests.test_data_collection
+      - run: python -m unittest Pipeline.Tests.test_data_processing
+      - run: python -m unittest Pipeline.Tests.test_model_offline_evaluation
+      - run: python -m unittest Pipeline.Tests.test_telemetry_collection
+      - run: python -m unittest Pipeline.Tests.test_model_online_evaluation
+      - run: python -m unittest Pipeline.Tests.test_data_schema
+      - run: python -m unittest Pipeline.Tests.test_model_serving
+      - run: python -m unittest Pipeline.Tests.test_model_training
+      - run: python -a -m unittest Pipeline.Tests.tempCodeRunnerFile
+      - run: python -a -m unittest Server.schema_check
+      - run: python -a -m unittest discover
 
 workflows:
   build_and_test:
