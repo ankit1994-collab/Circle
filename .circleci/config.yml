@@ -7,7 +7,8 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - run: python3 Server.app.py
+      - run: pip install -r requirements.txt
+      - run: pip install kafka-python
   test:
     working_directory: ~/circleci-python
     docker:
